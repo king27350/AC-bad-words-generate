@@ -1,0 +1,64 @@
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Choose <i class="fas fa-key"></i></h5>
+          <hr>
+          <form method="POST" action="/">
+            <div class="card-group card-row form-group">
+              <div class="card " style="width: 18rem;margin-right:1.2em;">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                  class="card-img-top " alt="...">
+                <div class="card-body ">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="options_job" class="custom-control-input"
+                      value="engineer">
+                    <label class="custom-control-label" for="customRadioInline1">Engineer</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;margin-right:1.2em;">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="options_job" class="custom-control-input"
+                      value="designer">
+                    <label class="custom-control-label" for="customRadioInline2">Designer</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="options_job" class="custom-control-input"
+                      value="entrepreneur">
+                    <label class="custom-control-label" for="customRadioInline3">Entrepreneur</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card-footer row">
+              <div>
+                <button class="btn btn-success m-2" type="submit">Generate Trash Words</button>
+              </div>
+              <div class="col-8 border border-rounded" style="min-height:100px;">{{ talks }}</div>
+          </form>
+        </div>
+      </div>
+
+      <small class="text-muted text-right m-2">
+        Created by <a href="https://github.com/king27350" target="_blank">Chris Wei</a>
+      </small>
+
+    </div>
+  </div>
+</div>
