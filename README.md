@@ -1,6 +1,7 @@
 # 幹話產生器
 ---
 ![indexpage](https://github.com/king27350/AC-bad-words-generate/blob/master/index.jpg?raw=true)
+
 從密碼產生器衍生的練習，可以點選想要的職業，隨機從資料庫抓取字串拼接。
 ---
 ## Getting Started
