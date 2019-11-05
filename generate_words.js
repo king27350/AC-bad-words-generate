@@ -9,24 +9,25 @@ const phrase = ['很簡單', '很容易', '很快', '很正常']
 
 // 8. function generate words
 function taskPhrase(option_job) {
-  return task[option_job][Math.floor(Math.random() * task[option_job].length)] + phrase[Math.floor(Math.random() * phrase.length)]
+  return '，' + task[option_job][Math.floor(Math.random() * task[option_job].length)] + phrase[Math.floor(Math.random() * phrase.length)] + '吧!'
 }
 
 // 7. define words output function
 function generateWords(option_job) {
   let answer = ''
+  const frontPhrase = '身為一個，'
   // define user choice & generate words
   if (!option_job) {
     answer = '請不要空白'
   }
   if (option_job === 'engineer') {
-    answer = '工程師' + taskPhrase(option_job)
+    answer = frontPhrase + '工程師' + taskPhrase(option_job)
   }
   if (option_job === 'designer') {
-    answer = '設計師' + taskPhrase(option_job)
+    answer = frontPhrase + '設計師' + taskPhrase(option_job)
   }
   if (option_job === 'entrepreneur') {
-    answer = '創業家' + taskPhrase(option_job)
+    answer = frontPhrase + '創業家' + taskPhrase(option_job)
   }
   return answer
 }
